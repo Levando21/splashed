@@ -7,7 +7,7 @@ import Footer from "./componens/Footer.tsx";
 
 function App() {
 	return (
-		<div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-4">
+		<div className="contmain min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-2">
 			<Header />
 			<AlbumCover />
 			<ListenButtons />
