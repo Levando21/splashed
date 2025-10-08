@@ -21,8 +21,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: 
-		/* Основной градиент */ linear-gradient(
+	background: linear-gradient(
 			135deg,
 			#0a0a2a 0%,
 			#1a1a3a 25%,
@@ -30,17 +29,15 @@ body {
 			#1a1a3a 75%,
 			#0a0a2a 100%
 		),
-		/* Абстрактные фигуры - круги */
-			radial-gradient(circle at 20% 30%, var(--accent-1) 0%, transparent 50%),
+		radial-gradient(circle at 20% 30%, var(--accent-1) 0%, transparent 50%),
 		radial-gradient(circle at 80% 70%, var(--accent-2) 0%, transparent 50%),
 		radial-gradient(circle at 40% 50%, var(--accent-3) 0%, transparent 60%),
 		radial-gradient(circle at 60% 20%, var(--accent-4) 0%, transparent 55%),
-		/* Геометрические фигуры - треугольники */
-			conic-gradient(
-				from 0deg at 10% 80%,
-				var(--accent-1) 0deg 120deg,
-				transparent 120deg
-			),
+		conic-gradient(
+			from 0deg at 10% 80%,
+			var(--accent-1) 0deg 120deg,
+			transparent 120deg
+		),
 		conic-gradient(
 			from 45deg at 90% 20%,
 			var(--accent-2) 0deg 120deg,
@@ -51,14 +48,13 @@ body {
 			var(--accent-3) 0deg 120deg,
 			transparent 120deg
 		),
-		/* Волны и линии */
-			repeating-linear-gradient(
-				45deg,
-				transparent,
-				transparent 10px,
-				rgba(255, 255, 255, 0.1) 10px,
-				rgba(255, 255, 255, 0.1) 20px
-			),
+		repeating-linear-gradient(
+			45deg,
+			transparent,
+			transparent 10px,
+			rgba(255, 255, 255, 0.1) 10px,
+			rgba(255, 255, 255, 0.1) 20px
+		),
 		repeating-linear-gradient(
 			-45deg,
 			transparent,
@@ -74,7 +70,6 @@ body {
 	overflow: hidden;
 }
 
-/* Анимация движения фона */
 @keyframes cosmicFlow {
 	0% {
 		background-position: 0% 50%, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
@@ -89,7 +84,6 @@ body {
 	}
 }
 
-/* Анимация плавающих фигур */
 @keyframes floatShapes {
 	0%,
 	100% {
@@ -110,7 +104,6 @@ body {
 	}
 }
 
-/* Пульсация фона */
 @keyframes pulseBackground {
 	0%,
 	100% {
@@ -121,7 +114,6 @@ body {
 	}
 }
 
-/* Дополнительные плавающие элементы */
 body::before {
 	content: "";
 	position: fixed;
@@ -129,8 +121,7 @@ body::before {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: 
-		/* Блестки и частицы */ radial-gradient(
+	background: radial-gradient(
 			3px 3px at 20% 30%,
 			var(--accent-1) 50%,
 			transparent 50%
@@ -142,20 +133,13 @@ body::before {
 		radial-gradient(3px 3px at 90% 20%, var(--accent-2) 50%, transparent 50%),
 		radial-gradient(2px 2px at 70% 40%, var(--accent-3) 50%, transparent 50%),
 		radial-gradient(4px 4px at 30% 60%, var(--accent-4) 50%, transparent 50%),
-		/* Абстрактные линии */
-			linear-gradient(
-				90deg,
-				transparent,
-				rgba(255, 255, 255, 0.1) 50%,
-				transparent
-			);
+		linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1) 50%, transparent);
 	animation: floatParticles 25s linear infinite, twinkle 4s ease-in-out infinite;
 	pointer-events: none;
 	z-index: -1;
 	opacity: 0.6;
 }
 
-/* Анимация частиц */
 @keyframes floatParticles {
 	0% {
 		transform: translateY(0) translateX(0) rotate(0deg);
@@ -174,7 +158,6 @@ body::before {
 	}
 }
 
-/* Мерцание */
 @keyframes twinkle {
 	0%,
 	100% {
@@ -185,7 +168,6 @@ body::before {
 	}
 }
 
-/* Геометрические фигуры */
 body::after {
 	content: "";
 	position: fixed;
@@ -237,7 +219,6 @@ body::after {
 	}
 }
 
-/* Все остальные стили остаются без изменений */
 .album-card {
 	background: rgba(37, 37, 37, 0.95);
 	backdrop-filter: blur(10px);
@@ -408,7 +389,6 @@ p.artist:hover {
 	transform: translateX(3px);
 }
 
-/* Specific button styles with enhanced colors */
 .stream-button.spotify {
 	background: linear-gradient(135deg, #1db954, #1ed760);
 }
@@ -448,7 +428,6 @@ p.artist:hover {
 	}
 }
 
-/* Responsive design */
 @media (max-width: 767px) {
 	body {
 		justify-content: center;
